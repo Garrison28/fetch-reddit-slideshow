@@ -3,29 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <title>Fetch images</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hello Front-End</title>
 </head>
 <body>
-  <nav>
-    <h1>Halo</h1>
-  </nav>
-  <main>
-      <h2></h2>
-      <form id="imageForm">
-          <div>
-          <label for="query">Search Query</label>
-          <input id="query" type="text" class="txt">
-          </div>
-          <input type="submit" value="Go!" class="btn">
-      </form>
-      <hr>
-      <div>
-          <h2 id="result-title"></h2>
-          <div id="result" class="rslt"></div>
-      </div>
-  </main>
-  <script src="js/app.js
-"></script>
+	<main>
+		<form id="search-form">
+			<h2 class="page-title">Reddit image slideshow</h2>
+			<div class="input">
+				<label id="query-label" for="query">Search Query</label>
+				<input id="query" type="text" class="txt">
+				<input id="start" type="submit" value="Start the slideshow!" class="btn">
+			</div>
+		</form>
+		<h2 id="result-title"></h2>
+		<div id="result-message">
+		</div>
+		<div id="result">
+			<div class="pane" id="prev-image"></div>
+			<div class="pane" id="current-image"></div>
+			<div class="pane" id="next-image"></div>
+		</div>
+	</main>
+	<script src="js/slideshow.js"></script>
 </body>
 </html>
